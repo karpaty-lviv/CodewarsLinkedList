@@ -5,9 +5,10 @@ from linked_list_class import Node
 
 
 def stringify(node):
+    """Returns string represantation of linked list"""
     text = f'{node.data}'
     current_node = node.next
-    while current_node.next != None:
+    while current_node.next is not None:
         text += f' -> {current_node.data}'
         current_node = current_node.next
     text += f' -> {current_node.data} -> None'
