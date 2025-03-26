@@ -10,7 +10,5 @@ def stringify(node):
     while current_node.next != None:
         text += f' -> {current_node.data}'
         current_node = current_node.next
-    text += ' -> None'
+    text += f' -> {current_node.data} -> None'
     return text
-
-print(stringify(Node(0, Node(1, Node(4, Node(9, Node(16)))))))
