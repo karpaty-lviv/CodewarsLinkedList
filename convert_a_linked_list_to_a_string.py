@@ -6,6 +6,8 @@ from linked_list_class import Node
 
 def stringify(node):
     """Returns string represantation of linked list"""
+    if node is None:
+        return 'None'
     text = f'{node.data}'
     current_node = node.next
     while current_node.next is not None:
