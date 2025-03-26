@@ -9,6 +9,8 @@ def stringify(node):
     if node is None:
         return 'None'
     text = f'{node.data}'
+    if node.next is None:
+        return f'{text} -> None'
     current_node = node.next
     while current_node.next is not None:
         text += f' -> {current_node.data}'
