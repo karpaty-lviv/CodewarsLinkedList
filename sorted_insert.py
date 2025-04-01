@@ -20,5 +20,7 @@ def sorted_insert(head, data):
             break
         current_node = current_node.next
     temp = current_node.next
-    current_node.next = Node(data, temp)
+    temp_node = Node(data)
+    temp_node.next = temp
+    current_node.next = temp_node
     return current_node
