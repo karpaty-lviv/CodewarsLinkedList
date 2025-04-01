@@ -14,7 +14,8 @@ class Context(object):
     
 def move_node(source, dest):
     """Move node"""
-    
+    if source is None:
+        raise Exception
     first_node = source.data
     source = source.next
     new_dest = Node(first_node)
