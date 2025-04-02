@@ -15,10 +15,7 @@ def remove_duplicates(head):
         return None
     current_node = head
     while current_node.next is not None:
-        print(current_node.data)
-        print(current_node.next.data)
         if current_node.data == current_node.next.data:
-            current_node = current_node.next
             current_node.next = current_node.next.next
         else:
             current_node = current_node.next
