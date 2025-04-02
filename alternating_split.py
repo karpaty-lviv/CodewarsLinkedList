@@ -34,4 +34,6 @@ def alternating_split(head):
             current_node = current_node.next
             second = second.next
             parity_check = 0
+    first.next = None
+    second.next = None
     return Context(first_head, second_head)
