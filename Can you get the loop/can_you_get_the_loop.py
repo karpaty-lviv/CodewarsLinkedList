@@ -3,9 +3,9 @@
 
 class Node():
     """Class for node in linked list"""
-    def __init__(self, data, next = None):
+    def __init__(self, data):
         self.data = data
-        self.next = next
+        self.next = None
 
 
 def loop_size(node):
