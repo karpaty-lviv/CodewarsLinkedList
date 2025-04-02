@@ -19,4 +19,5 @@ def loop_size(node):
     rabit = rabit.next
     while rabit != turtle:
         rabit = rabit.next
+        counter += 1
     return counter
