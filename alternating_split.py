@@ -15,8 +15,8 @@ class Context(object):
 
 def alternating_split(head):
     """Split"""
-    if not head or head.next is None:
-        return Context(head, head.next)
+    if head.next is None or head is None:
+        raise Exception
     first_head = head
     second_head = head.next
     current_node = head.next.next
